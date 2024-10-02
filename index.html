@@ -3,50 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница главного оDOO</title>
+    <title>Мой сайт</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <!-- Header section -->
     <header>
-        <h1>Мы</h1>
-        <p>ООО «Немисль»</p>
+        <h1>Мой сайт</h1>
+        <p>Вот о нас</p>
     </header>
 
     <!-- Main content section -->
     <main>
-        <section>
-            <h2>Обратите внимание!</h2>
+        <section class="about-me">
+            <h2>О мне</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <img src="image.jpg" alt="Мой портрет">
         </section>
-        <section>
-            <h2>Наша цена</h2>
+
+        <!-- My experience section -->
+        <section class="experience">
+            <h2>Моя experiencia</h2>
             <ul>
-                <li>Стоимость:</li>
-                <li>$1 000</li>
+                <li>Работа в компании X (2018-2020)</li>
+                <li>Проект Y (2019-2020)</li>
+                <li>Проблема Z (2020)</li>
             </ul>
         </section>
-        <!-- Добавляем новый раздел с произвольным контентом -->
-        <section class="new-section">
-            <h3>Новый раздел</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+
+        <!-- My skills section -->
+        <section class="skills">
+            <h2>Моя навык</h2>
             <ul>
-                <li>Список:</li>
-                <li>
-                    <input type="checkbox" id="item1">
-                    <label for="item1">Item 1</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="item2">
-                    <label for="item2">Item 2</label>
-                </li>
+                <li>Языки: русский, английский</li>
+                <li>Технологии: HTML, CSS, JavaScript</li>
+                <li>Прogramмирование: Python, Java</li>
             </ul>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact">
+            <h2>Как связаться с нами?</h2>
+            <form>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Электронная почта">
+                <textarea placeholder="Сообщение"></textarea>
+                <button>Отправить</button>
+            </form>
         </section>
     </main>
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; 2023 Немисль. Все права защищены.</p>
+        <p>&copy; 2023 Мой сайт. Все права защищены.</p>
     </footer>
 </body>
 </html>
