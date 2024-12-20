@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Мой Портфолио</title>
+    <style>
+        /*CSS стили*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        /*Добавление стилей в зависимости от размера экрана*/
+        @media (max-width: 768px) {
+            .navbar a {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header section -->
-    <header>
-        <h1>Мой сайт</h1>
-        <p>Вот о нас</p>
-    </header>
+    <div class="navbar">
+        <a href="#about">Об About</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакт</a>
+    </div>
 
-    <!-- Main content section -->
-    <main>
-        <section class="about-me">
-            <h2>О мне</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <img src="image.jpg" alt="Мой портрет">
-        </section>
+    <div class="section" id="hero-section">
+        <h1>Мой Портфолио</h1>
+        <p>Привет, я <span>Web-разработчик</span> и готов предоставить вам профессиональные услуги в области веб-дизайна и разработки.</p>
+        <a href="#projects" class="button">Перейти к проектам</a>
+    </div>
 
-        <!-- My experience section -->
-        <section class="experience">
-            <h2>Моя experiencia</h2>
-            <ul>
-                <li>Работа в компании X (2018-2020)</li>
-                <li>Проект Y (2019-2020)</li>
-                <li>Проблема Z (2020)</li>
-            </ul>
-        </section>
+    <div class="section" id="about">
+        <h2>О нас</h2>
+        <p>Моя компания специализируется на создании качественных и удобных веб-сайтов для различных бизнесов.</p>
+        <a href="#projects" class="button">Перейти к проектам</a>
+    </div>
 
-        <!-- My skills section -->
-        <section class="skills">
-            <h2>Моя навык</h2>
-            <ul>
-                <li>Языки: русский, английский</li>
-                <li>Технологии: HTML, CSS, JavaScript</li>
-                <li>Прogramмирование: Python, Java</li>
-            </ul>
-        </section>
+    <div class="section" id="projects">
+        <h2>Проекты</h2>
+        <ul>
+            <li><a href="#project-1">Проект 1</a></li>
+            <li><a href="#project-2">Проект 2</a></li>
+            <li><a href="#project-3">Проект 3</a></li>
+        </ul>
+        <p>Вы можете узнать подробнее о каждом проекте, перейдя по ссылке.</p>
+        <a href="#contact" class="button">Перейти к контактам</a>
+    </div>
 
-        <!-- Contact section -->
-        <section class="contact">
-            <h2>Как связаться с нами?</h2>
-            <form>
-                <input type="text" placeholder="Имя">
-                <input type="email" placeholder="Электронная почта">
-                <textarea placeholder="Сообщение"></textarea>
-                <button>Отправить</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2023 Мой сайт. Все права защищены.</p>
-    </footer>
+    <div class="section" id="contact">
+        <h2>Контакт</h2>
+        <p>Чтобы связаться со мной, используйте форму обратной связи или отправьте мне сообщение на <a href="mailto:email@example.com">email@example.com</a>.</p>
+        <a href="#about" class="button">Перейти к описании</a>
+    </div>
 </body>
 </html>
